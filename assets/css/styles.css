@@ -726,3 +726,41 @@ body.loaded #preloader .loader{
       transform: rotate(360deg);
   }
 }
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none; /* Hidden by default */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-icon::before {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Adjust this value to position the tail */
+  right: 20px; /* Adjust this value to position the tail */
+  width: 0;
+  height: 0;
+  border-top: 10px solid #25D366; /* Same color as the bubble */
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.whatsapp-icon i {
+  font-size: 24px;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+  background-color: #1EBE56;
+}

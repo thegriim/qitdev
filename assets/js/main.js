@@ -74,3 +74,29 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.add('loaded');
     }, 3000); // 3000 milliseconds equals 3 seconds
 });
+
+
+
+// Show or hide the WhatsApp icon based on scroll position
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    const whatsappIcon = document.querySelector(".whatsapp-icon");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        whatsappIcon.style.display = "flex";
+    } else {
+        whatsappIcon.style.display = "none";
+    }
+}
+
+// Optional: Add event listener for click analytics tracking
+document.querySelector(".whatsapp-icon").addEventListener("click", function() {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'click', {
+            'event_category': 'WhatsApp',
+            'event_label': 'WhatsApp Icon Click'
+        });
+    }
+});
