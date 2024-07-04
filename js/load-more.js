@@ -31,3 +31,15 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 3000); // 10 seconds
   });
 });
+
+
+const languages = ["English", "Yoruba", "French", "Hindi"];
+
+let index = 0;
+
+function changeLanguage() {
+    document.getElementById("dynamicLanguage").innerText = languages[index];
+    index = (index + 1) % languages.length;
+}
+
+setInterval(changeLanguage, 7000);
