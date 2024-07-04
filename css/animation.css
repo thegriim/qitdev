@@ -1,0 +1,64 @@
+/* Keyframes for cross-fade */
+@keyframes crossFadeOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+@keyframes crossFadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Class to apply cross-fade out */
+.cross-fade-out {
+  animation: crossFadeOut 2s forwards; /* Adjusted duration to 2 seconds */
+}
+
+/* Class to apply cross-fade in */
+.cross-fade-in {
+  animation: crossFadeIn 2s forwards; /* Adjusted duration to 2 seconds */
+}
+
+/* Greyscale filter on hover */
+#dynamicImage:hover {
+  filter: grayscale(100%);
+}
+
+.preloader {
+  display: inline-flex;
+  align-items: center;
+}
+
+.preloader span {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  margin-left: 2px;
+  background-color: burlywood;
+  border-radius: 50%;
+  display: inline-block;
+  animation: dot-blink 1s infinite both;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes dot-blink {
+  0%, 100% {
+      opacity: 0.2;
+  }
+  50% {
+      opacity: 1;
+  }
+}

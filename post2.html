@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class='no-js' >
+	
+	<head>
+		
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Abdul Muqeet - Professional web developer specializing in responsive design, SEO, and modern web technologies. Contact me for your web development needs.">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	
+		
+		<title>Starting React: A How-To Guide for Novice Users - Abdul Muqeet</title>
+		
+		<!--[if lt IE 9]>
+		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!--=============== FAVICON ===============-->
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+		
+		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' >
+		<link rel='stylesheet' type='text/css' href='css/ionicons.min.css' >
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+		<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
+		<link rel='stylesheet' type='text/css' href='css/owl.theme.css' >
+		<link rel='stylesheet' type='text/css' href='css/owl.transitions.css' >
+		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
+		<link rel='stylesheet' type='text/css' href='css/style.css' >
+		<link rel='stylesheet' type='text/css' href='css/color-default.css' >
+		
+		
+	</head>
+	
+	<body >
+		
+		
+		<!--close button-->
+		<a href='index.html' class='close-btn' >
+			<span></span>
+			<span></span>
+		</a>
+		<!--/close button-->
+		
+		
+		<div id='preloader' >
+		
+			<div class='loader' >
+				<img src='img/load.gif' alt='symp' >
+			</div>
+			
+		</div>
+		
+		
+		<div id='wrapper' >
+			
+			<section id='post' class='blog-page blog-section' >
+				
+				<div class='posts-block section-block' >
+					
+					<div class='container' >
+						
+						<div class='row' >
+							
+							<div class='col-md-8' >
+								
+								<div class='post' >
+									
+									<div class='media' >
+										<img src='img/blog2.jpeg' alt='symp' >
+									</div>
+									
+									<div class='content' >
+										
+										<h4>
+											<a href='#' >
+												Starting React: A How-To Guide for Novice Users
+											</a>
+										</h4>
+										
+										<ul class='post-icons' >
+											
+											<li>
+												<i class='ion-ios-person' ></i>
+												<span>Abdul Muqeet</span>
+											</li>
+											
+											<li>
+												<i class='ion-ios-clock' ></i>
+												<span>30 June 2024</span>
+											</li>
+											
+											<li>
+												<i class='ion-ios-chatbubble' ></i>
+												<span>88</span>
+											</li>
+											
+											
+											
+										</ul>
+										
+										<p>
+											To get started with React, you must first set up your development environment, which includes installing <b>Node.js and npm (Node Package Manager)</b>, both of which are required for managing packages and dependencies in your React project.
+									</p>
+									
+									<p>
+											To begin, download and install Node.js from the official website. After that, run <code>node -v</code> and <code>npm -v</code> in your terminal to confirm that the installation was successful.
+									</p>
+									
+									<p>
+											Using Node.js and npm, run the following command to create a new React project: <code>npx create-react-app my-app</code>. This command creates a new React project with all the necessary configurations. Navigate to the project directory with <code>cd my-app</code> and start the development server with <code>npm start</code>. Your new React app should now be running in the browser.
+									</p>
+									
+									<p>
+											Understanding React's <b>core concepts</b> is crucial. React is <b>component-based</b>, meaning you build your application using independent and reusable components. These components can have their own <b>state</b> and <b>properties</b>, allowing for dynamic and interactive UIs.
+									</p>
+									
+									<p>
+											<b>JSX</b>, a syntax extension for JavaScript, is used in React to describe what the UI should look like. It looks similar to HTML and makes the code easier to write and understand. React components can be defined as functions or classes, and they use <b>state</b> and <b>props (properties)</b> to manage data and behavior.
+									</p>
+									
+									<p>
+											To make a simple React component, open your project in a code editor and make a new file called <code>MyComponent.js</code>. In this file, define a functional component that returns some JSX.
+									</p>
+									
+									<p>
+											<code>
+													import React from 'react';<br/>
+													function MyComponent() {<br/>
+													return (<br/>
+													&lt;div&gt;<br/>
+													&lt;h1&gt;<b>Hello, React!</b>&lt;/h1&gt;<br/>
+													&lt;p&gt;This is my first component.&lt;/p&gt;<br/>
+													&lt;/div&gt;<br/>
+													);<br/>
+													}<br/>
+													export default MyComponent;
+											</code>
+									</p>
+									
+									<p>
+											Now, import and use this component in the <code>App.js</code> file. Change the default content to:
+									</p>
+									
+									<p>
+											<code>
+													import React from 'react';<br/>
+													import MyComponent from './MyComponent';<br/>
+													function App() {<br/>
+													return (<br/>
+													&lt;div className="App"&gt;<br/>
+													&lt;MyComponent /&gt;<br/>
+													&lt;/div&gt;<br/>
+													);<br/>
+													}<br/>
+													export default App;
+											</code>
+									</p>
+									
+									<p>
+										Save your changes and view the result in your browser; <b>Congratulations, you've created your first React component!</b> As you gain more experience with the framework, you can continue to explore its powerful features and build more complex components.
+									</p>																																
+									</div>
+									
+								</div>
+								
+								<div class='post-more' >
+									<a href='#' class='more-link' >
+										Next Post
+									</a>
+								</div>
+								
+							</div>
+							
+							<div class='col-md-4' >
+								
+								<div class='sidebar' >
+									
+									<div class='sidebar-widget' >
+										
+										<div class='search-box' >
+											
+											<input type='text' placeholder='Search' class='search-input' >
+											
+											<a class='search-btn' href='#' >
+												<i class='ion-ios-search' ></i>
+											</a>
+											
+										</div>
+										
+									</div>
+									
+									<div class='sidebar-widget' >
+										<div class='categories-widget' >
+										
+											<div class='widget-header' >
+												<h4>
+													<i class='ion-ios-folder' ></i> Categories
+												</h4>
+											</div>
+											
+											<ul class='sidebar-list' >
+												
+												<li>
+													<a href='#' >Web Development</a>
+												</li>
+												
+												<li>
+													<a href='#' >React</a>
+												</li>
+												
+												<li>
+													<a href='#' >JavaScript</a>
+												</li>
+												
+												<li>
+													<a href='#' >Front-End Development</a>
+												</li>
+												
+												<li>
+													<a href='#' >Programming Tutorials</a>
+												</li>
+												
+												
+												
+											</ul>
+										
+										</div>
+									</div>
+									
+									<div class='sidebar-widget' >
+										<div class='widget-header' >
+											<h4>
+												<i class='ion-ios-pricetag' ></i>
+												Tags
+											</h4>
+										</div>
+										
+										<ul class='sidebar-list list-inline' >
+											<li>
+												<a href='#' >Design</a>
+											</li>
+											<li>
+												<a href='#' >Tech</a>
+											</li>
+											<li>
+												<a href='#' >Web</a>
+											</li>
+											<li>
+												<a href='#' >Modern</a>
+											</li>
+											<li>
+												<a href='#' >JSX</a>
+											</li>
+											<li>
+												<a href='#' >Node.js</a>
+											</li>
+											<li>
+												<a href='#' >App</a>
+											</li>
+											<li>
+												<a href='#' >Development Environment</a>
+											</li>
+											
+										</ul>
+										
+									</div>
+									
+								</div>
+								
+							</div>
+							
+						
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				
+				<div class='footer bg-lightgray section-block' >
+					
+					<div class='container' >
+						
+						<div class='row' >
+							
+							<div class='col-md-6 text-left' >
+								<h4>Abdul Muqeet</h4>
+							</div>
+							
+							<div class='col-md-6 text-right' >
+								<ul class='footer-social' >
+									<li>
+										<a href='https://www.instagram.com/qitdev/' >
+												<i class='ri-instagram-line'></i>
+										</a>
+								</li>
+								<li>
+										<a href='https://twitter.com/iamqitdev' >
+												<i class='ri-twitter-line'></i>
+										</a>
+								</li>
+								<li>
+										<a href='https://pinterest.com/iamqitdev' >
+												<i class='ri-pinterest-line'></i>
+										</a>
+								</li>
+								<!-- <li>
+										<a href='#' >
+												<i class='ri-facebook-line'></i>
+										</a>
+								</li> -->								
+								</ul>
+							</div>
+							
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				
+				
+			</section>
+			
+		</div>
+		
+		<script src='js/jquery.min.js' ></script>
+		<script src='js/jquery.stellar.min.js' ></script>
+		<script src='js/modernizr.js' ></script>
+		<script src='js/owl.carousel.min.js' ></script>
+		<script src='js/jquery.shuffle.min.js' ></script>
+		<script src='js/jquery.magnific-popup.min.js' ></script>
+		<script src='js/validator.min.js' ></script>
+		<script src='js/smoothscroll.js' ></script>
+		<script src='js/script.js' ></script>
+		
+	</body>
+	
+</html>

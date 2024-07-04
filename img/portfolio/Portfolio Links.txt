@@ -1,0 +1,9 @@
+portfolio1 = https://merry-sable-a248bd.netlify.app/
+portfolio2 = https://jsm-lyriks-app..netlify.app/
+portfolio3 = https://jsm-dall-e.com/
+portfolio4 = https://syncfusion-dashboard.netlify.app/
+portfolio5 = https://modern-business-website.com/
+portfolio6 = 
+portfolio7 =
+portfolio8 =
+portfolio9 =
