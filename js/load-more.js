@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-const languages = ["English", "Yoruba", "French", "Hindi"];
+const languages = ["English", "Spanish", "French", "Hindi"];
 
 let index = 0;
 

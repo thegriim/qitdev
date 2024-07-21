@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Array of image sources
     const images = [
         'img/man1.jpg',
-        'img/man2.jpg'
+        'img/man2.jpg',
+        'img/man4.jpg',
+        'img/man5.jpg'
     ];
 
     // Index to keep track of the current image

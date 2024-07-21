@@ -40,7 +40,7 @@
   width: 8px;
   height: 8px;
   margin-left: 2px;
-  background-color: burlywood;
+  background:#B7A389;
   border-radius: 50%;
   display: inline-block;
   animation: dot-blink 1s infinite both;
@@ -62,3 +62,26 @@
       opacity: 1;
   }
 }
+
+.link-style {
+  color: yellow; /* Change link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.link-style:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.arrow-transform {
+  display: inline-block;
+  margin-left: 8px; /* Space between text and arrow */
+  transition: transform 0.3s ease; /* Smooth transformation */
+  font-size: 16px; /* Arrow size */
+  transform: translateX(0); /* Default position */
+}
+
+.symp-btn:hover .arrow-transform {
+  transform: translateX(5px); /* Move the arrow on hover */
+}
+
+
