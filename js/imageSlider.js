@@ -120,3 +120,67 @@ if (imgElement) {
     console.error('Image element with id "dynamicImage" not found.');
 }
 
+// =========== BLOG SECTION
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-btn');
+    const posts = document.querySelectorAll('.post');
+    const noResultsMessage = document.getElementById('no-results-message');
+    const loadMoreButton = document.getElementById('load-more-btn');
+  
+    function filterPosts() {
+      const query = searchInput.value.toLowerCase();
+      let hasResults = false;
+  
+      posts.forEach(post => {
+        const title = post.querySelector('h4 a').textContent.toLowerCase();
+  
+        if (query === '' || title.includes(query)) {
+          post.style.display = '';
+          hasResults = true;
+        } else {
+          post.style.display = 'none';
+        }
+      });
+  
+      // Show or hide the "No results found" message and "Load More" button based on whether there are results
+      if (!hasResults && query !== '') {
+        noResultsMessage.style.display = 'block';
+        loadMoreButton.style.display = 'none'; // Hide the "Load More" button
+      } else {
+        noResultsMessage.style.display = 'none';
+        loadMoreButton.style.display = ''; // Show the "Load More" button
+      }
+    }
+  
+    searchButton.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default action of the link
+      filterPosts();
+    });
+  
+    // Optional: Filter posts when the user types in the input field
+    searchInput.addEventListener('input', filterPosts);
+  });
+  
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const postLinks = document.querySelectorAll('.post h4 a');
+  
+    postLinks.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+  
+        // Add the fade-out class to the body or any parent container
+        document.body.classList.add('fade-out');
+  
+        // Delay the navigation to allow the fade-out effect to complete
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 500); // Match this duration with the transition time in CSS
+      });
+    });
+  });
+  
