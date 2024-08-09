@@ -32,14 +32,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-const languages = ["English", "Spanish", "French", "Hindi"];
-
-let index = 0;
-
-function changeLanguage() {
-    document.getElementById("dynamicLanguage").innerText = languages[index];
-    index = (index + 1) % languages.length;
-}
-
-setInterval(changeLanguage, 7000);
