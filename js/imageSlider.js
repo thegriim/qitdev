@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'img/man4.jpg',
         'img/man5.jpg',
         'img/man6.jpg'
+        'img/man7.jpg'
     ];
 
     // Index to keep track of the current image
