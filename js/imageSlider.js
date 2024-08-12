@@ -3,10 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = [
         'img/man1.jpg',
         'img/man2.jpg',
-        'img/man4.jpg',
-        'img/man5.jpg',
-        'img/man6.jpg'
-        'img/man7.jpg'
+        'img/man4.jpg'
     ];
 
     // Index to keep track of the current image
